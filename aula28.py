@@ -16,4 +16,17 @@ Se nada for digitado em nome ou idade:
 nome = input('Digite o seu nome: ')
 idade = input('Digite sua idade: ')
 
-print(nome, idade)
+
+if nome and idade:
+    print(f'Seu nome é: {nome}')
+    if ' ' in nome:
+        print(f'Seu nome contém espaços')
+    else:
+        print(f'Seu nome não contém espaço')
+    print(f'Seu nome invertido é: {nome[::-1]}')
+    print(f'Seu nome contém: {len(nome)} letras')
+    print(f'A primeira letra do seu nome é: {nome[0]}')
+    print(f'A última letra do seu nome é: {nome[-1]}')
+else:
+    print('Desculpe você deixou os campos nome e idade vazios')
+    
